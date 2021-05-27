@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class greatest3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a ,b ,c;
+		Scanner n=new Scanner(System.in);
+		System.out.println("enter a : ");
+		a=n.nextInt();
+		System.out.println("enter b: ");
+		b=n.nextInt();
+		System.out.println("enter c : ");
+		c=n.nextInt();
+		if(a>b&&a>c)
+			System.out.println("a is greatest : " +a);
+		if(b>c&&b>a)
+			System.out.println("b is greatest : "+b);
+		else
+			System.out.println("c is greatest :"+c);
+			
+		}
+
+}
