@@ -1,0 +1,28 @@
+package IO;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public class filecopy {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		byte[] array=new byte[50];
+		try {
+			FileInputStream f1=new FileInputStream("newFile.txt");
+			FileOutputStream f2=new FileOutputStream("CopiedFile.txt");
+			f1.read(array);
+			f2.write(array);
+			System.out.println("file sucessfully copied");
+			f1.close();
+			f2.close();
+			
+		}
+		catch(IOException e)
+		{
+			e.getStackTrace();
+		}
+
+	}
+
+}
