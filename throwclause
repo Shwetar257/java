@@ -1,0 +1,29 @@
+class vote 
+{
+	void check(int age) throws Exception
+	{
+		if(age<18)
+		{
+			throw new Exception("age must be greater than 18");
+		}
+		
+		else
+			System.out.println("you can vote");
+		
+	}
+}
+public class throwexp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+    vote v=new vote();
+    try 
+    {
+    	v.check(13);
+    }
+    catch(Exception e) {
+    	System.out.println(e);
+    }
+	}
+
+}
