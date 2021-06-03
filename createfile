@@ -1,0 +1,23 @@
+import java.io.File;
+public class create_file {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		File file= new File("newFile.txt");
+		try
+		{
+			boolean value =file.createNewFile();
+			if(value) {
+				System.out.println("the new file is created");
+			}
+			else {
+				System.out.println("the file already exits");
+			}
+		}
+		catch(Exception e) {
+			e.getStackTrace();
+		}
+
+	}
+
+}
