@@ -1,0 +1,44 @@
+You have to arrange student in height wise.There will be some student whom height will be same so u have to arrange all of them in a beautiful line.
+
+The first line of each test case contains an Integer 'N' denoting the number of the student.
+
+The second line of each test case contains 'N' space-separated Integers denoting the height of students.
+
+For each test case, print a line in which students are arranged in a beautiful line in heightwise manner.
+
+SAMPLE INPUT 
+10
+2 2 1 1 2 0 2 0 2 1
+SAMPLE OUTPUT 
+0 0 1 1 1 2 2 2 2 2
+
+
+
+
+solution--------
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.*;
+
+
+// Warning: Printing unwanted or ill-formatted data to output will cause the test cases to fail
+
+class TestClass {
+    public static void main(String args[] )  throws Exception {
+        
+        Scanner sc = new Scanner(System.in);
+        int n =sc.nextInt();
+        int a[] =new int[n];
+
+        for(int i=0;i<n;i++)
+        {
+            a[i]= sc.nextInt();
+        }
+        Arrays.sort(a);
+
+        for(int i=0;i<n;i++)
+        {
+         System.out.print(a[i]+" ");
+        }
+    }
+}
